@@ -1,5 +1,5 @@
 import { Request , Response  } from "express"
-import { CreateUserUseCase } from "../CreateUserUseCase/CreateUserUseCase"
+import { CreateUserUseCase } from "../UseCases/CreateUserUseCase"
  
 
 export class CreateUserController {
@@ -20,7 +20,7 @@ export class CreateUserController {
       
     } catch (err) {
       return response.status(400).json({
-        message: err.message || 'unexpected error.' 
+        message: 'unexpected error.' 
       })
     }
   }

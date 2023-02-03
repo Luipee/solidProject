@@ -1,8 +1,8 @@
-import { IMailProvider, IMessage } from "../IMailProviders";
+import { IMailProvider, IMessage } from "../IMailProviders"
 import nodemailer from 'nodemailer'
 
   export class MailtrapMailProvider implements IMailProvider {
-    private transporter
+    transporter
 
     constructor() {
       this.transporter = nodemailer.createTransport({

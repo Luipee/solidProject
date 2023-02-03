@@ -3,7 +3,7 @@ import { router } from './models/user/routes/routes'
 
 
 const app = express()
-app.use(router)
-app.use(express.json())
 
+app.use(express.json())
+app.use(router)
 export {app}
